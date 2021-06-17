@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <style>
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           text-transform: capitalize;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+
+       .container{
+           min-height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background: rgb(85, 83, 83);
+       }
+
+       .container .email-signature{
+           width: 700px;
+           display: flex;
+           align-items: center;
+           background: #222;
+           border-radius: 5px;
+           box-shadow: 0 2px 5px #000;
+           padding: 10px 40px;
+       }
+
+       .container .email-signature .image{
+           height: 150px;
+           width: 150px;
+           object-fit: cover;
+           position: relative;
+       }
+
+       .container .email-signature .image img{
+           height: 100%;
+           width: 100%;
+           border-radius: 50%;
+           border: 5px solid white;
+           box-shadow: 0 0 5px #ccc;
+           position: relative;
+       }
+        ul{
+            list-style: none;
+        }
+        .container .email-signature .content{
+            padding-left: 60px;
+        }
+        .container .email-signature .content .name{
+            text-align: center;
+            padding-left: 30px;
+            color: #bababa;
+        }
+        .container .email-signature .content .post{
+            font-size: 20px;
+            padding:10px ;
+            margin: 10px 5px;
+            background: #ccc;
+            border-radius: 50px;
+            color: #333;
+            text-align: center;
+        }
+        .container .email-signature .content .contact{
+            margin-top: -5px;
+            padding:10px
+        }
+        .container .email-signature .content .contact li{
+            list-style: none;
+            margin: 10px 0;
+            color:#ccc;
+            font-weight: 600;
+            letter-spacing: .8px;
+        }
+        .container .email-signature .content .contact li i{
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            background: #2c3e50;
+            margin-right: 10px;
+        }
+        .container .email-signature .content .icons{
+            display: flex;
+            padding:10px;
+            padding-left: 20px;
+            transition: all .7s;
+        }
+        .container .email-signature .content .icons li{
+            color: white;
+            margin-right: 20px;
+        }
+        .container .email-signature .content .icons li:hover{
+            color: grey;
+        }
+        @media (max-width:768px){
+            .container .email-signature{
+                flex-flow: column;
+                width: 90%;
+            }
+            .container .email-signature .content .name{
+                padding-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="email-signature">
+                <div class="image">
+                    <img src="siddhu.jpg" alt="">
+                </div>
+            <div class="content">
+                <h1 class="name">Siddhant Gelye</h1>
+                <h3 class="post">Full Stack Web Developer</h3>
+                <ul class="contact">
+                    <li><i class="fas fa-phone-alt"></i> +919769545684</li>
+                    <li><i class="fas fa-envelope"></i>siddhantwebdeveloper@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Wagle Estate, Thane(W)-400604</li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://www.facebook.com/siddhant.gelye" target="_blank"> <i class="fab fa-facebook-f"></i></a></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+        </div>
+        
+
+        </div>
+    </div>
+</body>
+</html>
